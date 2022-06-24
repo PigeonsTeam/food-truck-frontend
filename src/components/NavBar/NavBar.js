@@ -1,30 +1,29 @@
 import React from "react";
-import { AppBar, Box, IconButton, Toolbar, Typography } from "@mui/material";
-import { AccountCircle } from "@mui/icons-material";
+import { AppBar, Box, Container, IconButton, Toolbar, Typography } from "@mui/material";
+import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
 import MenuIcon from '@mui/icons-material/Menu';
 
 const NavBar = () => {
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <AppBar>
+    <Container sx={{ flexGrow: 1 }}>
+      <AppBar color="transparent">
         <Toolbar>
           <IconButton
             size="large"
             edge="start"
-            color="inherit"
             aria-label="menu"
             sx={{ mr: 2 }}
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1, textAlign: 'center' }}>
+          <Typography variant="h6" component="div" color="black"  sx={{ flexGrow: 1}}>
             StreetDeets
           </Typography>
-          <AccountCircle />
+          <AccountCircleOutlinedIcon htmlColor="black" />
           
         </Toolbar>
       </AppBar>
-    </Box>
+    </Container>
   );
 };
 
