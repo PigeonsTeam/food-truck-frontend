@@ -1,7 +1,14 @@
 import React from "react";
-import { AppBar, Box, Container, IconButton, Toolbar, Typography } from "@mui/material";
-import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
-import MenuIcon from '@mui/icons-material/Menu';
+import {
+  AppBar,
+  Box,
+  Container,
+  IconButton,
+  Toolbar,
+  Typography,
+} from "@mui/material";
+import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
+import MenuIcon from "@mui/icons-material/Menu";
 
 const NavBar = () => {
   return (
@@ -16,13 +23,18 @@ const NavBar = () => {
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" component="div" color="black"  sx={{ flexGrow: 1}}>
+          <Typography
+            variant="h6"
+            component="div"
+            color="black"
+            sx={{ flexGrow: 1 }}
+          >
             StreetDeets
           </Typography>
           <AccountCircleOutlinedIcon htmlColor="black" />
-          
         </Toolbar>
       </AppBar>
+      <Toolbar />
     </Container>
   );
 };
