@@ -1,11 +1,10 @@
 import * as React from "react";
-import { Typography, Grid, Stack, Pagination } from "@mui/material";
+import { Typography, Grid } from "@mui/material";
 import NavBar from "../../components/NavBar/NavBar";
 import AccountCircleOutlined from "@mui/icons-material/AccountCircleOutlined";
-import RecommendedCard from "../../components/Recommended/RecommendedCard";
 import BucketListButtons from "./BucketListButtons";
 
-const BucketListPage = () => {
+const BucketListPage = (isVisited) => {
   return (
     <>
       <NavBar />
@@ -27,13 +26,7 @@ const BucketListPage = () => {
           </Typography>
         </Grid>
         <BucketListButtons />
-        <Stack spacing={2} p={2} direction="column">
-          {/* bucket list template for now */}
-          <RecommendedCard />
-          <RecommendedCard />
-          <RecommendedCard />
-        </Stack>
-        <Pagination count={6} variant="outlined" shape="rounded" />
+        {/* <Pagination count={6} variant="outlined" shape="rounded" /> */}
       </Grid>
     </>
   );

@@ -7,3 +7,7 @@
   background-color: #F5CCA0;
   padding-top: 1%;
 }
+
+.active{
+  background-color: darkgray !important;
+}
