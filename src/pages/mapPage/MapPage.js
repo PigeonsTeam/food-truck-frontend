@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { v1 as uuid } from "uuid";
 import {
   Box,
+  Button,
   Card,
   CardContent,
   CardMedia,
@@ -15,16 +16,36 @@ import { Map, Marker } from "pigeon-maps";
 import { stamenToner } from "pigeon-maps/providers";
 import { foodTrucks } from "../../data/foodTrucks";
 import NavBar from "../../components/NavBar/NavBar";
+import { useNavigate } from "react-router-dom";
 
 const modalStyle = {
   position: "absolute",
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
-  bgcolor: "background.paper",
-  boxShadow: 24,
+  bgcolor: "transparent",
   borderRadius: 3,
-  p: 2,
+};
+
+const SquareButton = ({ title, onClick }) => {
+  return (
+    <Button
+      onClick={onClick}
+      size="small"
+      variant="contained"
+      sx={{
+        borderRadius: "6px",
+        backgroundColor: "#d9d8d8",
+        fontWeight: "600",
+
+        color: "black",
+        fontSize: "16px",
+        width: "98px",
+      }}
+    >
+      {title}
+    </Button>
+  );
 };
 
 const MapPage = () => {
@@ -32,6 +53,7 @@ const MapPage = () => {
   const [modalData, setModalData] = useState(null);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+  const navigate = useNavigate();
 
   const handleModal = (truck) => {
     setModalData(truck);
@@ -65,49 +87,66 @@ const MapPage = () => {
         >
           {markers}
         </Map>
-
         <Modal
           open={open}
           onClose={handleClose}
           aria-labelledby="modal-modal-title"
           aria-describedby="modal-modal-description"
         >
-          <Box sx={{ modalStyle }} p={2} mb={1}>
+          <Box sx={modalStyle} p={0} mb={0}>
             <Card
               sx={{
-                width: 330,
-                height: 330,
+                width: 357,
+                height: 285,
                 borderRadius: 2,
                 boxShadow: 3,
                 display: "flex",
                 flexDirection: "row",
               }}
             >
-              <Box py={2} pl={2}>
+              <Stack
+                spacing={2}
+                pl={2}
+                justifyContent="center"
+                alignItems="center"
+              >
                 <CardMedia
                   component="img"
                   image="sushiPic.jpeg"
-                  sx={{ width: 90, height: 90 }}
+                  sx={{ width: 70, height: 70 }}
                 />
                 <CardMedia
                   component="img"
                   image="sushiPic.jpeg"
-                  sx={{ width: 90, height: 90 }}
+                  sx={{ width: 70, height: 70 }}
                 />
                 <CardMedia
                   component="img"
                   image="sushiPic.jpeg"
-                  sx={{ width: 90, height: 90 }}
+                  sx={{ width: 70, height: 70 }}
                 />
-              </Box>
-              <Box pt={2} px={1}>
+              </Stack>
+              <Box ml={1} pt={3} px={1}>
                 <CardContent sx={{ padding: 0 }}>
-                  <Typography fontSize={16} sx={{ fontWeight: 700 }}>
-                    Lorem ipsum dolor sit amet
+                  <Typography mb={1} fontSize={18} sx={{ fontWeight: 700 }}>
+                    Lorem ipsum dolor sit
                   </Typography>
-                  <Typography fontSize={14} variant="p">
-                    Lorem ipsum dol or sit amet, conse ctetur adipiscing
+                  <Typography fontSize={16} variant="p">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Du
+                    is pellentesque venenatis aliqu am neque massa enim fusce.
                   </Typography>
+                  <br />
+                  <Box mt={2}>
+                    <Typography fontSize={16} variant="p">
+                      Hours: <br /> 12:00pm- 12:00am
+                    </Typography>
+                  </Box>
+                  <Box mt={3}>
+                    <Stack direction={"row"} spacing={3}>
+                      <SquareButton title={"Menu"} />
+                      <SquareButton title={"Profile"} onClick={() => navigate('/profile')} />
+                    </Stack>
+                  </Box>
                 </CardContent>
               </Box>
             </Card>
