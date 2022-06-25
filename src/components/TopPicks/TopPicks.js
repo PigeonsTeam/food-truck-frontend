@@ -8,15 +8,15 @@ import {
   Typography,
 } from "@mui/material";
 import { Container } from "@mui/system";
-import TopCard from './TopCard'
+import TopCard from "./TopCard";
 
 const TopPicks = () => {
   return (
-    <Box pl={2} pb={1}>
+    <Box pl={2} pb={1} className="top-picks">
       <Typography variant="h5" my={2} sx={{ fontWeight: 700 }}>
         Top Picks
       </Typography>
-      <Stack spacing={2} direction="row" sx={{ overflow: 'hidden' }}>
+      <Stack spacing={2} direction="row" sx={{ overflow: "hidden" }}>
         <TopCard />
         <TopCard />
         <TopCard />
