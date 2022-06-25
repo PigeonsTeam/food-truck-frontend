@@ -1,5 +1,5 @@
 import React from 'react';
-import TopPicks from '../../components/TopPicks';
+import TopPicks from '../../components/TopPicks/TopPicks';
 
 const LandingPage = () => {
   return (
