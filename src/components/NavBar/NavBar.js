@@ -14,7 +14,7 @@ const NavBar = () => {
   return (
     <Container sx={{ flexGrow: 1 }}>
       <AppBar color="transparent">
-        <Toolbar>
+        <Toolbar sx={{ justifyContent: 'space-between', }}>
           <IconButton
             size="large"
             edge="start"

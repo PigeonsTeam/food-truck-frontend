@@ -12,7 +12,7 @@ import TopCard from './TopCard'
 
 const TopPicks = () => {
   return (
-    <Box pl={2}>
+    <Box pl={2} pb={1}>
       <Typography variant="h5" my={2} sx={{ fontWeight: 700 }}>
         Top Picks
       </Typography>

@@ -1,19 +1,19 @@
 import React from "react";
 import { Box, Card, CardContent, CardMedia, Typography } from "@mui/material";
 
-const TopCard = () => {
+const RecommendedCard = () => {
   return (
     <Box mb={1}>
-    <Card sx={{ minWidth: 130, height: 240, borderRadius: 2, boxShadow: 3}}>
-      <Box pt={2} sx={{ display: "flex", justifyContent: "center" }}>
+    <Card sx={{ minWidth: 300, height: 125, borderRadius: 2, boxShadow: 3, display: 'flex', flexDirection: 'row' }}>
+      <Box py={2} pl={2}>
         <CardMedia
           component="img"
           image="sushiPic.jpeg"
           sx={{ width: 90, height: 90 }}
         />
       </Box>
-      <Box px={.5} pb={2}>
-        <CardContent sx={{ textAlign: "center", padding: 0 }}>
+      <Box pt={2} px={1} >
+        <CardContent sx={{ padding: 0 }}>
           <Typography fontSize={16} sx={{ fontWeight: 700 }}>
             Lorem ipsum dolor sit amet
           </Typography>
@@ -27,4 +27,4 @@ const TopCard = () => {
   );
 };
 
-export default TopCard;
+export default RecommendedCard;
