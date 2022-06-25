@@ -35,7 +35,7 @@ const NavBar = () => {
               StreetDeets
             </Typography>
           </Link>
-          <Link to="/profile" underline="none" component={RouterLink}>
+          <Link to="/bucketList" underline="none" component={RouterLink}>
           <AccountCircleOutlinedIcon htmlColor="black" />
           </Link>
         </Toolbar>
