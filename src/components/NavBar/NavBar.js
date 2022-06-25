@@ -4,12 +4,13 @@ import {
   Box,
   Container,
   IconButton,
+  Link,
   Toolbar,
   Typography,
 } from "@mui/material";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
 import MenuIcon from "@mui/icons-material/Menu";
-import { Link } from "react-router-dom";
+import { Link as RouterLink } from "react-router-dom";
 
 const NavBar = () => {
   return (
@@ -24,15 +25,19 @@ const NavBar = () => {
           >
             <MenuIcon />
           </IconButton>
-          <Typography
-            variant="h6"
-            component="div"
-            color="black"
-            sx={{ flexGrow: 1 }}
-          >
-            StreetDeets
-          </Typography>
+          <Link to="/" underline="none" component={RouterLink}>
+            <Typography
+              variant="h6"
+              component="div"
+              color="black"
+              sx={{ flexGrow: 1, fontWeight: 700, fontStyle: 'italic' }}
+            >
+              StreetDeets
+            </Typography>
+          </Link>
+          <Link to="/profile" underline="none" component={RouterLink}>
           <AccountCircleOutlinedIcon htmlColor="black" />
+          </Link>
         </Toolbar>
       </AppBar>
       <Toolbar />
