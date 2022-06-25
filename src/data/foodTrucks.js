@@ -12,7 +12,7 @@ export const foodTruck = {
   ],
   location: [40.7128, -74.0060]
 }
-
+//----------------------------------------------
 export const foodTrucks = [
   {
     name: 'Spaghetti House',
