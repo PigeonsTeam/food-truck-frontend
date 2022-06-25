@@ -8,22 +8,14 @@ import {
   Typography,
 } from "@mui/material";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
-import MenuIcon from "@mui/icons-material/Menu";
-import { Link } from "react-router-dom";
+import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
 
 const NavBar = () => {
   return (
     <Container sx={{ flexGrow: 1 }}>
       <AppBar position="fixed" sx={{ bgcolor: "white" }}>
         <Toolbar sx={{ justifyContent: "space-between" }}>
-          <IconButton
-            size="large"
-            edge="start"
-            aria-label="menu"
-            sx={{ mr: 2 }}
-          >
-            <MenuIcon />
-          </IconButton>
+          <AccountCircleOutlinedIcon htmlColor="black" sx={{ mr: 2 }} />
           <Typography
             variant="h6"
             component="div"
@@ -32,7 +24,7 @@ const NavBar = () => {
           >
             StreetDeets
           </Typography>
-          <AccountCircleOutlinedIcon htmlColor="black" />
+          <SettingsOutlinedIcon htmlColor="black" sx={{ fontSize: 26 }} />
         </Toolbar>
       </AppBar>
       <Toolbar />
