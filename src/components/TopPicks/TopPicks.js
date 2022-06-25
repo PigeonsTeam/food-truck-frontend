@@ -16,7 +16,15 @@ const TopPicks = () => {
       <Typography variant="h5" my={2} sx={{ fontWeight: 700 }}>
         Top Picks
       </Typography>
-      <Stack spacing={2} direction="row" sx={{ overflow: "hidden" }}>
+      <Stack
+        spacing={2}
+        direction="row"
+        sx={{ overflow: "auto" }}
+        style={{
+          overflowX: "scroll",
+          scrollbarWidth: "none",
+        }}
+      >
         <TopCard />
         <TopCard />
         <TopCard />
