@@ -65,6 +65,90 @@ export const Trucks = [
     location: [40.7438, -74.006],
   },
   {
+    name: "Lucy's Tamales",
+    foodType: "foodType",
+    shortDescription:
+      "Located on the intersection of Foster and Milwaukee. Fresh tamales daily!",
+    reviews: [
+      {
+        customerName: "Bill",
+        photo: "someImg.jpg",
+        description: "this place was really good",
+        rating: 4,
+      },
+    ],
+    image: "food/food12.jpeg",
+    topPick: false,
+    location: [46.7128, -78.006],
+  },
+  {
+    name: "Tia's Elotes",
+    foodType: "foodType",
+    shortDescription:
+      "Tia's love put into a delicious snack. Made fresh on the spot",
+    reviews: [
+      {
+        customerName: "Bill",
+        photo: "someImg.jpg",
+        description: "this place was really good",
+        rating: 4,
+      },
+    ],
+    image: "food/food13.jpeg",
+    topPick: false,
+    location: [48.7128, -79.006],
+  },
+  {
+    name: "Los Dos Tacos & Waffles",
+    foodType: "foodType",
+    shortDescription: "Tacos galore with a side of waffles. Limited quantity",
+    reviews: [
+      {
+        customerName: "Bill",
+        photo: "someImg.jpg",
+        description: "this place was really good",
+        rating: 4,
+      },
+    ],
+    image: "food/food14.jpeg",
+    topPick: false,
+    location: [50.7128, -83.006],
+  },
+  {
+    name: "Tako's Japanese Eats",
+    foodType: "foodType",
+    shortDescription:
+      "Japanese street food that brings the taste of Japan to you.",
+    reviews: [
+      {
+        customerName: "Bill",
+        photo: "someImg.jpg",
+        description: "this place was really good",
+        rating: 4,
+      },
+    ],
+    image: "food/food15.jpeg",
+    topPick: false,
+    location: [54.7128, -84.006],
+  },
+  {
+    name: "Momo's Dumplings",
+    foodType: "foodType",
+    shortDescription:
+      "A dumpling staple for all those who love all things dumpling.",
+    reviews: [
+      {
+        customerName: "Bill",
+        photo: "someImg.jpg",
+        description: "this place was really good",
+        rating: 4,
+      },
+    ],
+    image: "food/food15.jpeg",
+    topPick: false,
+    location: [54.7128, -84.006],
+  },
+  {
     name: "Spaghetti House",
     foodType: "foodType",
     shortDescription:
