@@ -14,8 +14,8 @@ import { Link } from "react-router-dom";
 const NavBar = () => {
   return (
     <Container sx={{ flexGrow: 1 }}>
-      <AppBar position="fixed" sx={{ bgcolor: 'white' }}>
-        <Toolbar sx={{ justifyContent: 'space-between', }}>
+      <AppBar position="fixed" sx={{ bgcolor: "white" }}>
+        <Toolbar sx={{ justifyContent: "space-between" }}>
           <IconButton
             size="large"
             edge="start"
@@ -32,7 +32,6 @@ const NavBar = () => {
           >
             StreetDeets
           </Typography>
-          <Link to="/map">Map</Link>
           <AccountCircleOutlinedIcon htmlColor="black" />
         </Toolbar>
       </AppBar>
