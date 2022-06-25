@@ -1,6 +1,7 @@
 export const foodTruck = {
   name: 'Taco Truck Express',
   foodType: 'foodType',
+  shortDescription: 'this is some stuff about this place, like about how tasty the food is. Or even what is special about it.',
   reviews: [
     {
       customerName: 'Bill',
@@ -16,6 +17,7 @@ export const foodTrucks = [
   {
     name: 'Spaghetti House',
     foodType: 'foodType',
+    shortDescription: 'this is some stuff about this place, like about how tasty the food is. Or even what is special about it.',
     reviews: [
       {
         customerName: 'Bill',
@@ -29,6 +31,7 @@ export const foodTrucks = [
   {
     name: 'Taco Truck Express',
     foodType: 'foodType',
+    shortDescription: 'this is some stuff about this place, like about how tasty the food is. Or even what is special about it.',
     reviews: [
       {
         customerName: 'Bill',
