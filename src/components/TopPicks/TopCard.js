@@ -31,7 +31,7 @@ const TopCard = (props) => {
           </Box>
           <Box px={0.5} pb={2}>
             <CardContent sx={{ paddingLeft: 2, paddingRight: 2 }}>
-              <Typography fontSize={14} sx={{ fontWeight: "bold !important" }}>
+              <Typography fontSize={14} sx={{ fontWeight: "700" }}>
                 {props.truck.name}
               </Typography>
               <Typography
