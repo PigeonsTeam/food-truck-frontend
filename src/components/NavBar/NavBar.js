@@ -9,6 +9,7 @@ import {
 } from "@mui/material";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
 import MenuIcon from "@mui/icons-material/Menu";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   return (
@@ -31,6 +32,7 @@ const NavBar = () => {
           >
             StreetDeets
           </Typography>
+          <Link to="/map">Map</Link>
           <AccountCircleOutlinedIcon htmlColor="black" />
         </Toolbar>
       </AppBar>
