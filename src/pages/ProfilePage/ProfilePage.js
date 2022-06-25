@@ -32,7 +32,6 @@ export default function ProfilePage() {
         <Gallery />
         <Review />
         <MoreSimilar />
-        <MoreSimilar />
       </Stack>
     </>
   );
