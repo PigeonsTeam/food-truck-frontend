@@ -30,13 +30,13 @@ const NavBar = () => {
               variant="h6"
               component="div"
               color="black"
-              sx={{ flexGrow: 1, fontWeight: 700, fontStyle: 'italic' }}
+              sx={{ flexGrow: 1, fontWeight: 700, fontStyle: "italic" }}
             >
-              StreetDeets
+              Peckish
             </Typography>
           </Link>
           <Link to="/profile" underline="none" component={RouterLink}>
-          <AccountCircleOutlinedIcon htmlColor="black" />
+            <AccountCircleOutlinedIcon htmlColor="black" />
           </Link>
         </Toolbar>
       </AppBar>
