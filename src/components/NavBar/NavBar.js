@@ -13,7 +13,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 const NavBar = () => {
   return (
     <Container sx={{ flexGrow: 1 }}>
-      <AppBar color="transparent">
+      <AppBar position="fixed" sx={{ bgcolor: 'white' }}>
         <Toolbar sx={{ justifyContent: 'space-between', }}>
           <IconButton
             size="large"
