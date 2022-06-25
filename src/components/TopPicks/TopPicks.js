@@ -1,18 +1,20 @@
 import React from "react";
-import {
-  Box,
-  Card,
-  CardContent,
-  CardMedia,
-  Stack,
-  Typography,
-} from "@mui/material";
-import { Container } from "@mui/system";
+import { Box, Stack, Typography } from "@mui/material";
 import TopCard from "./TopCard";
+import { Trucks } from "../../data/foodTrucks";
+import { v1 as uuid } from "uuid";
 
 const TopPicks = () => {
+  const displayTopPicks = () => {
+    const topPicks = [];
+    Trucks.forEach((truck) => {
+      if (truck.topPick) topPicks.push(<TopCard truck={truck} key={uuid()} />);
+    });
+
+    return topPicks;
+  };
   return (
-    <Box pl={2} pb={1} className="top-picks">
+    <Box pl={2} pb={1} mt={2} className="top-picks">
       <Typography variant="h5" my={2} sx={{ fontWeight: 700 }}>
         Top Picks
       </Typography>
@@ -25,9 +27,7 @@ const TopPicks = () => {
           scrollbarWidth: "none",
         }}
       >
-        <TopCard />
-        <TopCard />
-        <TopCard />
+        {displayTopPicks().map((topCard) => topCard)}
       </Stack>
     </Box>
   );

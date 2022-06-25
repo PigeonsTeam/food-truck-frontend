@@ -9,7 +9,7 @@ import {
 } from "@mui/material";
 import { Link as RouterLink } from "react-router-dom";
 
-const TopCard = () => {
+const TopCard = (props) => {
   return (
     <Link to="/profile" underline="none" component={RouterLink}>
       <Box mb={1}>
@@ -25,17 +25,21 @@ const TopCard = () => {
           <Box pt={2} sx={{ display: "flex", justifyContent: "center" }}>
             <CardMedia
               component="img"
-              image="sushiPic.jpeg"
-              sx={{ width: 90, height: 90 }}
+              image={props.truck.image}
+              sx={{ width: 110, height: 90 }}
             />
           </Box>
           <Box px={0.5} pb={2}>
-            <CardContent sx={{ textAlign: "center", padding: 0 }}>
-              <Typography fontSize={16} sx={{ fontWeight: 700 }}>
-                Lorem ipsum dolor sit amet
+            <CardContent sx={{ paddingLeft: 2, paddingRight: 2 }}>
+              <Typography fontSize={14} sx={{ fontWeight: "bold !important" }}>
+                {props.truck.name}
               </Typography>
-              <Typography fontSize={14} variant="p">
-                Lorem ipsum dol or sit amet, conse ctetur adipiscing
+              <Typography
+                fontSize={14}
+                variant="p"
+                sx={{ textAlign: "justify" }}
+              >
+                {props.truck.shortDescription}
               </Typography>
             </CardContent>
           </Box>
