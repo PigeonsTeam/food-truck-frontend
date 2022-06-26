@@ -39,21 +39,25 @@ const BucketListPage = () => {
     }
 
     if (pageNumber > position) {
-      let newEnd, newStart;
+      let newEnd = end,
+        newStart = starting;
       if (prev === "minus") {
-        let newStart = end;
+        newStart = end;
+        console.log(end);
         setStarting(newStart);
         if (end + 4 > allTrucksLength) {
-          setEnd(9);
+          newEnd = 9;
+          setEnd(newEnd);
         } else {
-          setEnd(end + 4);
+          newEnd = end + 4;
+          setEnd(newEnd);
         }
       }
-      console.log(starting);
-      console.log(end);
-      setSubArray(allTrucks.slice(starting, end));
-      setStarting(end);
-      if (end + 4 > allTrucksLength) {
+      console.log(newStart);
+      console.log(newEnd);
+      setSubArray(allTrucks.slice(newStart, newEnd));
+      setStarting(newEnd);
+      if (newEnd + 4 > allTrucksLength) {
         setEnd(9);
       } else {
         setEnd(end + 4);
