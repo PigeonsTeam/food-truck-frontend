@@ -16,7 +16,7 @@ import Footer from "../../components/Footer/Footer";
 export default function ProfilePage() {
   return (
     <>
-      <NavBar></NavBar>
+      <NavBar noSearchBar={false}/>
       <SearchBar isWide={false}></SearchBar>
       <Return />
       <Stack

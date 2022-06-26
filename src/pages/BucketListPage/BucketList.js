@@ -8,7 +8,7 @@ import Footer from "../../components/Footer/Footer";
 const BucketListPage = (isVisited) => {
   return (
     <>
-      <NavBar />
+      <NavBar noSearchBar={true} />
       <Grid container spacing={2} alignItems={"center"} p={4}>
         <Grid item xs={6}>
           {/* to be replaced with user profile picture */}
