@@ -8,8 +8,7 @@ import Footer from "../../components/Footer/Footer";
 const LandingPage = () => {
   return (
     <>
-      <NavBar />
-      <SearchBar isWide={false} />
+      <NavBar noSearchBar={false} />
       <TopPicks />
       <Recommended />
       <Footer />
