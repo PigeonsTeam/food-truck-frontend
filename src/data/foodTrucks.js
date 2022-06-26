@@ -186,6 +186,7 @@ export const Trucks = [
       },
     ],
     visited: true,
+    image: 'food4.jpg' ,
     topPick: false,
     location: [40.7338, -74.006],
   },

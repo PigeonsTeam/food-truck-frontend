@@ -50,16 +50,15 @@ const SquareButton = ({ title, onClick }) => {
 const MapPage = () => {
   const [open, setOpen] = useState(false);
   const [modalData, setModalData] = useState(null);
+  const navigate = useNavigate();
+
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
-  const navigate = useNavigate();
 
   const handleModal = (truck) => {
     setModalData(truck);
     handleOpen();
   };
-
-  console.log(modalData)
 
   const markers = Trucks?.map((truck) => {
     return (
@@ -72,8 +71,6 @@ const MapPage = () => {
       />
     );
   });
-
-  // create a small popup/modal for the basic food truck info
 
   return (
     <>
@@ -118,12 +115,12 @@ const MapPage = () => {
                 />
                 <CardMedia
                   component="img"
-                  image="sushiPic.jpeg"
+                  image="table.jpeg"
                   sx={{ width: 70, height: 70 }}
                 />
                 <CardMedia
                   component="img"
-                  image="sushiPic.jpeg"
+                  image="cup.jpeg"
                   sx={{ width: 70, height: 70 }}
                 />
               </Stack>
