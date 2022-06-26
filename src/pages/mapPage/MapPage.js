@@ -14,7 +14,7 @@ import {
 } from "@mui/material";
 import { Map, Marker } from "pigeon-maps";
 import { stamenToner } from "pigeon-maps/providers";
-import { foodTrucks } from "../../data/foodTrucks";
+import { foodTrucks, Trucks } from "../../data/foodTrucks";
 import NavBar from "../../components/NavBar/NavBar";
 import { useNavigate } from "react-router-dom";
 
@@ -37,7 +37,6 @@ const SquareButton = ({ title, onClick }) => {
         borderRadius: "6px",
         backgroundColor: "#d9d8d8",
         fontWeight: "600",
-
         color: "black",
         fontSize: "16px",
         width: "98px",
@@ -60,7 +59,9 @@ const MapPage = () => {
     handleOpen();
   };
 
-  const markers = foodTrucks.map((truck) => {
+  console.log(modalData)
+
+  const markers = Trucks?.map((truck) => {
     return (
       <Marker
         color="#B21905"
@@ -112,7 +113,7 @@ const MapPage = () => {
               >
                 <CardMedia
                   component="img"
-                  image="sushiPic.jpeg"
+                  image={modalData?.image}
                   sx={{ width: 70, height: 70 }}
                 />
                 <CardMedia
@@ -129,11 +130,10 @@ const MapPage = () => {
               <Box ml={1} pt={3} px={1}>
                 <CardContent sx={{ padding: 0 }}>
                   <Typography mb={1} fontSize={18} sx={{ fontWeight: 700 }}>
-                    Lorem ipsum dolor sit
+                    {modalData?.name}
                   </Typography>
                   <Typography fontSize={16} variant="p">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Du
-                    is pellentesque venenatis aliqu am neque massa enim fusce.
+                    {modalData?.shortDescription}
                   </Typography>
                   <br />
                   <Box mt={2}>
