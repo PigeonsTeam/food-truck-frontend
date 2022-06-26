@@ -7,6 +7,7 @@ import { v1 as uuid } from "uuid";
 import { Trucks } from "../../data/foodTrucks";
 import { useState } from "react";
 import Footer from "../../components/Footer/Footer";
+import Return from "../../components/General/Return";
 
 const BucketListPage = () => {
   const displayBucketLists = () => {
@@ -90,6 +91,7 @@ const BucketListPage = () => {
   return (
     <>
       <NavBar noSearchBar={true} />
+      <Return />
       <Grid container spacing={2} justifyContent={"center"} p={4} mt={2}>
         <Stack
           direction="column"

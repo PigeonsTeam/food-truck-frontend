@@ -17,6 +17,7 @@ import { stamenToner } from "pigeon-maps/providers";
 import { foodTrucks, Trucks } from "../../data/foodTrucks";
 import NavBar from "../../components/NavBar/NavBar";
 import { useNavigate } from "react-router-dom";
+import Return from "../../components/General/Return";
 
 const modalStyle = {
   position: "absolute",
@@ -141,7 +142,10 @@ const MapPage = () => {
                   <Box mt={3}>
                     <Stack direction={"row"} spacing={3}>
                       <SquareButton title={"Menu"} />
-                      <SquareButton title={"Profile"} onClick={() => navigate('/profile')} />
+                      <SquareButton
+                        title={"Profile"}
+                        onClick={() => navigate("/profile")}
+                      />
                     </Stack>
                   </Box>
                 </CardContent>
