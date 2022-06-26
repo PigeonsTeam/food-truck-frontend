@@ -1,37 +1,36 @@
 import React from "react";
 import { Box, Stack, Typography } from "@mui/material";
 import ReviewCards from "./ReviewCards";
+import { v1 as uuid } from "uuid";
 
-export default function Review() {
+export default function Review(props) {
+  const displayReviews = () => {
+    const reviews = [];
+    props.reviews.reviews.forEach((review) => {
+      reviews.push(<ReviewCards review={review} key={uuid()} />);
+    });
+
+    return reviews;
+  };
+
   return (
     <Stack
       direction="column"
       alignItems="flex-start"
       sx={{
-        backgroundColor: "#fae6d0",
+        backgroundColor: props.reviews.color,
         width: "90%",
         borderRadius: 5,
         pl: 2,
         pt: 1,
       }}
     >
-      <Typography sx={{ mb: 2, fontWeight: 700 }}>Customer Reviews</Typography>
+      <Typography sx={{ mb: 2, fontWeight: 700 }}>
+        {props.reviews.reviewType} Reviews
+      </Typography>
       <Box>
         <Stack spacing={1} direction="column">
-          <ReviewCards
-            imgSrc={"chicken.jpg"}
-            description="The carnitas tacos were amazing!"
-          />
-          <ReviewCards
-            imgSrc={"toast.jpg"}
-            description="I love coming here after school
-and grabbing some quick eats"
-          />
-          <ReviewCards
-            imgSrc={"./earth.jpg"}
-            description="First time here and have to say
-I will be back to try more!"
-          />
+          {displayReviews().map((reviewCard) => reviewCard)}
         </Stack>
       </Box>
       <Stack

@@ -5,7 +5,9 @@ import Stack from "@mui/material/Stack";
 import StarBorderIcon from "@mui/icons-material/StarBorder";
 
 export default function ReviewCards(props) {
-  const { imgSrc, description } = props;
+  const imgSrc = props.review.image;
+  const description = props.review.review;
+  const name = props.review.name;
   return (
     <Box
       sx={{
@@ -34,7 +36,7 @@ export default function ReviewCards(props) {
           <CardContent sx={{ padding: 0 }}>
             <Stack direction="row" alignItems="center">
               <Typography fontSize={16} sx={{ fontWeight: 700, mr: 1 }}>
-                Customer
+                {name}
               </Typography>
               <StarIcon sx={{ fontSize: "14px" }}></StarIcon>
               <StarIcon sx={{ fontSize: "14px" }}></StarIcon>
