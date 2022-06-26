@@ -39,6 +39,7 @@ export default function ProfileCard() {
                 fontSize: 18,
                 fontWeight: 600,
                 padding: "21px 7px",
+                cursor: "pointer",
               }}
             >
               Bucket List

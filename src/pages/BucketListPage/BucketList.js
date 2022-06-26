@@ -1,8 +1,8 @@
 import * as React from "react";
 import { Typography, Grid } from "@mui/material";
 import NavBar from "../../components/NavBar/NavBar";
-import AccountCircleOutlined from "@mui/icons-material/AccountCircleOutlined";
 import BucketListButtons from "./BucketListButtons";
+import ProfileAvatar from "../../components/User/ProfileAvatar";
 
 const BucketListPage = (isVisited) => {
   return (
@@ -11,7 +11,7 @@ const BucketListPage = (isVisited) => {
       <Grid container spacing={2} alignItems={"center"} p={4}>
         <Grid item xs={6}>
           {/* to be replaced with user profile picture */}
-          <AccountCircleOutlined xs={6} sx={{ fontSize: 150 }} />
+          <ProfileAvatar />
         </Grid>
         <Grid item xs={6}>
           <Typography
