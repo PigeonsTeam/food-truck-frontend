@@ -63,7 +63,7 @@ const MapPage = () => {
   const markers = foodTrucks.map((truck) => {
     return (
       <Marker
-        color="black"
+        color="#B21905"
         width={50}
         anchor={[truck.location[0], truck.location[1]]}
         onClick={() => handleModal(truck)}

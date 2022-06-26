@@ -42,7 +42,7 @@ const NavBar = ({ noSearchBar }) => {
           sx={{
             justifyContent: "space-between",
             alignItems: "center",
-            height: !noSearchBar ? "80px" : "0px",
+            height: !noSearchBar ? "40px" : "0px",
             pb: !noSearchBar ?  "20px" : '0px',
           }}
         >
@@ -50,7 +50,7 @@ const NavBar = ({ noSearchBar }) => {
           
         </Toolbar>
       </AppBar>
-      <Toolbar sx={{ height: !noSearchBar ? "170px" : '130px' }} />
+      <Toolbar sx={{ height: !noSearchBar ? "150px" : '130px' }} />
     </Container>
   );
 };
