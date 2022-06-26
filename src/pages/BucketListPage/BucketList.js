@@ -11,11 +11,10 @@ const BucketListPage = (isVisited) => {
       <Grid container spacing={2} alignItems={"center"} p={4}>
         <Grid item xs={6}>
           {/* to be replaced with user profile picture */}
-          <AccountCircleOutlined item xs={6} sx={{ fontSize: 150 }} />
+          <AccountCircleOutlined xs={6} sx={{ fontSize: 150 }} />
         </Grid>
         <Grid item xs={6}>
           <Typography
-            item
             xs={6}
             variant="h5"
             component="div"
