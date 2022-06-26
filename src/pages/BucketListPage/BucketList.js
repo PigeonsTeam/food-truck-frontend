@@ -90,7 +90,7 @@ const BucketListPage = () => {
   return (
     <>
       <NavBar noSearchBar={true} />
-      <Grid container spacing={2} justifyContent={"center"} p={4}>
+      <Grid container spacing={2} justifyContent={"center"} p={4} mt={2}>
         <Stack
           direction="column"
           spacing={2}
