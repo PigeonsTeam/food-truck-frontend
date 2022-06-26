@@ -10,7 +10,7 @@ export default function Return() {
         flexDirection: "row",
         textDecoration: "underline",
         marginLeft: "10px",
-        marginTop: "30px",
+        marginTop: "16px",
       }}
     >
       <Link
