@@ -15,27 +15,33 @@ import Footer from "../../components/Footer/Footer";
 import { Box } from "@mui/material";
 
 export default function ProfilePage() {
+
   return (
     <>
-      <NavBar noSearchBar={false}/>
-      <Box mt={5}> 
-      <Return />
-      <Stack
-        direction="column"
-        spacing={3}
-        alignItems="flex-start"
-        sx={{ ml: 4 }}
-      >
-        <ProfileCard />
-        <Hours />
-        <About />
-        <Menu />
-      </Stack>
-      <Stack direction="column" spacing={3} alignItems="center" sx={{ mt: 2, mb: '60px' }}>
-        <Gallery />
-        <Review reviews={reviewInfo.vendor} />
-        <MoreSimilar />
-      </Stack>
+      <NavBar noSearchBar={false} />
+      <Box mt={5}>
+        <Return />
+        <Stack
+          direction="column"
+          spacing={3}
+          alignItems="flex-start"
+          sx={{ ml: 4 }}
+        >
+          <ProfileCard />
+          <Hours />
+          <About />
+          <Menu />
+        </Stack>
+        <Stack
+          direction="column"
+          spacing={3}
+          alignItems="center"
+          sx={{ mt: 2, mb: "60px" }}
+        >
+          <Gallery />
+          <Review reviews={reviewInfo.vendor} />
+          <MoreSimilar />
+        </Stack>
       </Box>
       <Footer />
     </>
