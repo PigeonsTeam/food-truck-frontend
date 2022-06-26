@@ -240,3 +240,95 @@ export const Trucks = [
     location: [40.7438, -69.006],
   },
 ];
+
+export const FilterTrucks = {
+  Sweet: [
+    {
+      name: "Los Dos Tacos & Waffles",
+      shortDescription: "Tacos galore with a side of waffles. Limited quantity",
+      image: "food/food14.jpeg",
+    },
+    {
+      name: "Lucy's Tamales",
+      shortDescription: "Located on the intersection of Foster and Milwaukee.",
+      image: "food/food12.jpeg",
+    },
+    {
+      name: "Martha's Churros",
+      shortDescription: "No fuss traditional Mexican churros",
+      image: "food/food17.jpg",
+    },
+    {
+      name: "Tia's Elotes",
+      shortDescription:
+        "Tia's love put into a delicious snack. Made fresh on the spot",
+      image: "food/food13.jpeg",
+    },
+  ],
+  Savory: [
+    {
+      name: "Tuco's Tacos",
+      shortDescription: "Tuco's tacos are the best tacos in the area.",
+      image: "food/food8.avif",
+    },
+    {
+      name: "Momo's Dumplings",
+      shortDescription: "Best for all those who love all things dumpling.",
+      image: "food/food15.jpeg",
+    },
+    {
+      name: "Hotteok Stand",
+      shortDescription: "Fresh & tasty hotteoks made with love",
+      image: "food/food18.jpg",
+    },
+    {
+      name: "Shiro's Kakigōri",
+      shortDescription: "Traditional Japanese ice cream perfect for a hot day",
+      image: "food/food20.jpg",
+    },
+  ],
+  Spicy: [
+    {
+      name: "Farrow's Falafels",
+      shortDescription: "Hearty Middle Eastern Eats!",
+      image: "food/food10.avif",
+    },
+    {
+      name: "Skewers Emporium",
+      shortDescription: "Any food you can think of? We can put it on a stick!",
+      image: "food/food11.jpeg",
+    },
+    {
+      name: "Skewers Emporium",
+      shortDescription: "Any food you can think of? We can put it on a stick!",
+      image: "food/food11.jpeg",
+    },
+    {
+      name: "Jongro BBQ",
+      shortDescription: "Spicy, Spicy, Spicy Korean BBQ!",
+      image: "food/food21.jpg",
+    },
+  ],
+  Sour: [
+    {
+      name: "Hahahalol",
+      shortDescription: "Fast and casual authentic halal food.",
+      image: "food/food9.avif",
+    },
+    {
+      name: "Tuco's Tacos",
+      shortDescription: "Tuco's tacos are the best tacos in the area.",
+      image: "food/food8.avif",
+    },
+    {
+      name: "Szechuan Garden",
+      shortDescription: "Amazing place to have sweet and sour chicken.",
+      image: "food/food22.jpg",
+    },
+    {
+      name: "Farrow's Falafels",
+      shortDescription: "Hearty Middle Eastern Eats!",
+      image: "food/food10.avif",
+    },
+  ],
+};

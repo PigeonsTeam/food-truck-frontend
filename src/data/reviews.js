@@ -22,7 +22,7 @@ export const reviewInfo = {
   },
   vendor: {
     reviewType: "Customer ",
-    color: "#fae6d0",
+    color: "white",
     reviews: [
       {
         image: "chicken.jpg",

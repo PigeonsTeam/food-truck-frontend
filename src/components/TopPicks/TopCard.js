@@ -12,7 +12,7 @@ import { Link as RouterLink } from "react-router-dom";
 const TopCard = (props) => {
   return (
     <Link to="/profile" underline="none" component={RouterLink}>
-      <Box mb={1}>
+      <Box mb={1} sx={{ textAlign: "center" }}>
         <Card
           sx={{
             minWidth: 130,
@@ -31,7 +31,7 @@ const TopCard = (props) => {
           </Box>
           <Box px={0.5} pb={2}>
             <CardContent sx={{ paddingLeft: 2, paddingRight: 2 }}>
-              <Typography fontSize={14} sx={{ fontWeight: "700" }}>
+              <Typography fontSize={14} sx={{ fontWeight: "700", mt: "-10px" }}>
                 {props.truck.name}
               </Typography>
               <Typography

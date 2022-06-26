@@ -11,6 +11,7 @@ export default function DistanceSlider(props) {
       onChange={props.handleSliderChange}
       min={1}
       max={30}
+      color="success"
     />
   );
 }
