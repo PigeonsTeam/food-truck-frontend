@@ -23,9 +23,9 @@ const NavBar = () => {
               variant="h6"
               component="div"
               color="black"
-              sx={{ flexGrow: 1, fontWeight: 700, fontStyle: 'italic' }}
+              sx={{ flexGrow: 1, fontWeight: 700, fontStyle: "italic" }}
             >
-              StreetDeets
+              Peckish
             </Typography>
           </Link>
           <SettingsOutlinedIcon htmlColor="black" sx={{ fontSize: 26 }} />
