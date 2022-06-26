@@ -6,6 +6,7 @@ import RecommendedCard from "../../components/Recommended/RecommendedCard";
 import { v1 as uuid } from "uuid";
 import { Trucks } from "../../data/foodTrucks";
 import { useState } from "react";
+import Footer from "../../components/Footer/Footer";
 
 const BucketListPage = () => {
   const displayBucketLists = () => {
@@ -84,7 +85,7 @@ const BucketListPage = () => {
 
   return (
     <>
-      <NavBar />
+      <NavBar noSearchBar={true} />
       <Grid container spacing={2} justifyContent={"center"} p={4}>
         <Stack
           direction="column"
@@ -113,6 +114,7 @@ const BucketListPage = () => {
           onChange={controlPagination}
         />
       </Grid>
+      <Footer />
     </>
   );
 };
