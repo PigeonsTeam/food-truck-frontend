@@ -3,6 +3,7 @@ import {
   AppBar,
   Box,
   Container,
+  Divider,
   IconButton,
   Link,
   Toolbar,
@@ -11,36 +12,45 @@ import {
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Link as RouterLink } from "react-router-dom";
+import SearchBar from "../General/SearchBar";
 
-const NavBar = () => {
+const NavBar = ({ noSearchBar }) => {
   return (
     <Container sx={{ flexGrow: 1 }}>
       <AppBar position="fixed" sx={{ bgcolor: "white" }}>
-        <Toolbar sx={{ justifyContent: "space-between" }}>
-          <IconButton
-            size="large"
-            edge="start"
-            aria-label="menu"
-            sx={{ mr: 2 }}
-          >
-            <MenuIcon />
+        <Toolbar
+          sx={{ justifyContent: "space-between", height: "100px", pt: "10px" }}
+        >
+          <IconButton size="large" edge="start" aria-label="menu">
+            <MenuIcon sx={{ fontSize: "33px", color: "#000000" }} />
           </IconButton>
           <Link to="/" underline="none" component={RouterLink}>
-            <Typography
-              variant="h6"
-              component="div"
-              color="black"
-              sx={{ flexGrow: 1, fontWeight: 700, fontStyle: "italic" }}
-            >
-              Peckish
-            </Typography>
+            <Box component="img" sx={{}} alt="logo image" src="logo.png"></Box>
           </Link>
-          <Link to="/profile" underline="none" component={RouterLink}>
-            <AccountCircleOutlinedIcon htmlColor="black" />
+          <Link to="/bucketList" underline="none" component={RouterLink}>
+            <AccountCircleOutlinedIcon
+              sx={{ fontSize: "33px" }}
+              htmlColor="black"
+            />
           </Link>
         </Toolbar>
+        <Divider
+          variant="middle"
+          sx={{ color: "#211C36", border: "1px solid #211C36;", mt: "-20px" }}
+        />
+        <Toolbar
+          sx={{
+            justifyContent: "space-between",
+            alignItems: "center",
+            height: !noSearchBar ? "80px" : "0px",
+            pb: !noSearchBar ?  "20px" : '0px',
+          }}
+        >
+          { !noSearchBar ? <SearchBar isWide={false} /> : <></> }
+          
+        </Toolbar>
       </AppBar>
-      <Toolbar />
+      <Toolbar sx={{ height: !noSearchBar ? "170px" : '130px' }} />
     </Container>
   );
 };

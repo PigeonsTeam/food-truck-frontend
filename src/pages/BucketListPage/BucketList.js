@@ -3,11 +3,12 @@ import { Typography, Grid } from "@mui/material";
 import NavBar from "../../components/NavBar/NavBar";
 import BucketListButtons from "./BucketListButtons";
 import ProfileAvatar from "../../components/User/ProfileAvatar";
+import Footer from "../../components/Footer/Footer";
 
 const BucketListPage = (isVisited) => {
   return (
     <>
-      <NavBar />
+      <NavBar noSearchBar={true} />
       <Grid container spacing={2} alignItems={"center"} p={4}>
         <Grid item xs={6}>
           {/* to be replaced with user profile picture */}
@@ -27,6 +28,7 @@ const BucketListPage = (isVisited) => {
         <BucketListButtons />
         {/* <Pagination count={6} variant="outlined" shape="rounded" /> */}
       </Grid>
+      <Footer />
     </>
   );
 };

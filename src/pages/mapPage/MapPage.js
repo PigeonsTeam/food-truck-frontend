@@ -76,7 +76,7 @@ const MapPage = () => {
 
   return (
     <>
-      <NavBar />
+      <NavBar noSearchBar={false} />
       <Box>
         <Map
           provider={stamenToner}

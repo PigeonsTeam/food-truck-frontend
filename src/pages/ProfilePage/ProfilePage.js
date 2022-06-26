@@ -11,11 +11,12 @@ import Gallery from "../../components/Profile/Gallery";
 import Review from "../../components/Profile/Review";
 import MoreSimilar from "../../components/Profile/MoreSimilar";
 import { reviewInfo } from "../../data/reviews";
+import Footer from "../../components/Footer/Footer";
 
 export default function ProfilePage() {
   return (
     <>
-      <NavBar></NavBar>
+      <NavBar noSearchBar={false}/>
       <SearchBar isWide={false}></SearchBar>
       <Return />
       <Stack
@@ -29,11 +30,12 @@ export default function ProfilePage() {
         <About />
         <Menu />
       </Stack>
-      <Stack direction="column" spacing={3} alignItems="center" sx={{ mt: 2 }}>
+      <Stack direction="column" spacing={3} alignItems="center" sx={{ mt: 2, mb: '60px' }}>
         <Gallery />
         <Review reviews={reviewInfo.vendor} />
         <MoreSimilar />
       </Stack>
+      <Footer />
     </>
   );
 }
