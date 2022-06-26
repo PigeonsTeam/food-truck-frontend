@@ -3,6 +3,7 @@ import { Typography, Grid } from "@mui/material";
 import NavBar from "../../components/NavBar/NavBar";
 import BucketListButtons from "./BucketListButtons";
 import ProfileAvatar from "../../components/User/ProfileAvatar";
+import Footer from "../../components/Footer/Footer";
 
 const BucketListPage = (isVisited) => {
   return (
@@ -27,6 +28,7 @@ const BucketListPage = (isVisited) => {
         <BucketListButtons />
         {/* <Pagination count={6} variant="outlined" shape="rounded" /> */}
       </Grid>
+      <Footer />
     </>
   );
 };
