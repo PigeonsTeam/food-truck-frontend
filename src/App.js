@@ -5,7 +5,7 @@ import MapPage from "./pages/mapPage/MapPage";
 import FilterPage from "./pages/FilterPage/FilterPage";
 import ProfilePage from "./pages/ProfilePage/ProfilePage";
 import BucketListPage from "./pages/BucketListPage/BucketList";
-
+import UserPage from "./pages/UserPage/UserPage";
 function App() {
   return (
     <>
@@ -15,6 +15,7 @@ function App() {
         <Route path="/filter" element={<FilterPage />} />
         <Route path="/profile" element={<ProfilePage />} />
         <Route path="/bucketList" element={<BucketListPage />} />
+        <Route path="/user" element={<UserPage />} />
       </Routes>
     </>
   );
