@@ -4,7 +4,6 @@ import ReviewCards from "./ReviewCards";
 import { v1 as uuid } from "uuid";
 
 export default function Review(props) {
-  console.log(props);
   const displayReviews = () => {
     const reviews = [];
     props.reviews.reviews.forEach((review) => {
