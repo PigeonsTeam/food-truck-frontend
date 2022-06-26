@@ -12,26 +12,39 @@ import React from "react";
 
 const Footer = () => {
   const breadcrumbs = [
-    <Link underline="hover" key="1" color="inherit" href="/">
-      MUI
+    <Link
+      fontSize={"10px"}
+      fontWeight={700}
+      color="#000000"
+      underline="hover"
+      key="1"
+    >
+      About
     </Link>,
     <Link
+      fontSize={"10px"}
+      fontWeight={700}
+      color="#000000"
       underline="hover"
       key="2"
-      color="inherit"
-      href="/material-ui/getting-started/installation/"
     >
-      Core
+      Vendors
     </Link>,
-    <Typography key="3" color="text.primary">
-      Breadcrumb
-    </Typography>,
+    <Link
+      fontSize={"10px"}
+      fontWeight={700}
+      color="#000000"
+      underline="hover"
+      key="3"
+    >
+      Contact Us
+    </Link>,
   ];
 
   return (
     <AppBar
       position="static"
-      sx={{ top: "auto", bottom: 0, bgcolor: "#EEEDF3", height: "200px" }}
+      sx={{ top: "auto", bottom: 0, bgcolor: "#EEEDF3", height: "200px", }}
     >
       <Stack spacing={1} mt={"21px"} alignItems="center">
         <Typography
@@ -60,9 +73,20 @@ const Footer = () => {
         sx={{ color: "#211C36", mt: "18px", border: "1px solid #211C36;" }}
       />
       <Stack>
-        <Breadcrumbs separator="-" aria-label="breadcrumb" sx={{ margin: "5px 0 0 16px" }}>
+        <Breadcrumbs
+          separator="-"
+          aria-label="breadcrumb"
+          sx={{ margin: "5px 0 0 20px" }}
+        >
           {breadcrumbs}
         </Breadcrumbs>
+        <Box ml={"20px"}>
+          <Typography fontSize="8px" color="#000000" fontWeight={400}>
+            2022 Peckish. All rights reserved. Privacy Policy - Terms of
+            Conditions <br />
+            FreyHacks Hackathon
+          </Typography>
+        </Box>
       </Stack>
     </AppBar>
   );
