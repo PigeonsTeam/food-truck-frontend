@@ -49,7 +49,7 @@ const NavBar = ({ noSearchBar }) => {
           <Link to="/" underline="none" component={RouterLink}>
             <Box component="img" sx={{}} alt="logo image" src="logo.png"></Box>
           </Link>
-          <Link to="/bucketList" underline="none" component={RouterLink}>
+          <Link to="/user" underline="none" component={RouterLink}>
             <AccountCircleOutlinedIcon
               sx={{ fontSize: "33px" }}
               htmlColor="black"
