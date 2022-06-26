@@ -30,7 +30,8 @@ Customer Profiles with a gallery and reviews and a collection of vendors by the 
 - JavaScript
 - MaterialUI 
 - Pigeon-Maps
-- Git and GitHub (GitHub Actions)
+- Git and GitHub 
+- Vercel for deployment
 
 ## How we built it 🍉
 
@@ -42,7 +43,7 @@ The file structure is designed to make it clear different sections of project. T
 
 For best user experience, the flow of the app was carefully designed to make flow the system clear and easy to understand. Best practices for styling and layout of the page are carried out according to visual design principles such as Balance, Emphasis and Unity.
 
-Finally, we used GitHub Actions to build CI/CD pipeline for our project and deployment.
+Finally, we used Vercel to deploy our project online.
 
 ## Challenges we ran into ⛱
 
