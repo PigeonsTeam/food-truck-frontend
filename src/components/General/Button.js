@@ -4,28 +4,39 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 const theme = createTheme({
   palette: {
-    buttonSelected: {
-      main: "#aaaaaa",
+    Sweet: {
+      main: "#ea758e",
+    },
+    Savory: {
+      main: "#d36617",
+    },
+    Spicy: {
+      main: "#db2a13",
+    },
+    Sour: {
+      main: "#ffa903",
     },
   },
 });
 
 export default function CustomButton(props) {
+  let backgroundColor = props.color;
   return (
     <ThemeProvider theme={theme}>
       <Button
         size="small"
         variant="contained"
-        color="buttonSelected"
+        color={props.color}
         sx={{
           borderRadius: "20px",
-          backgroundColor: "#d9d8d8",
+          backgroundColor,
           fontWeight: "600",
           color: "black",
           fontSize: "12px",
         }}
+        onClick={props.handleChange}
       >
-        {props.children}
+        {props.value}
       </Button>
     </ThemeProvider>
   );

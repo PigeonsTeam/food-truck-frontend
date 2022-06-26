@@ -27,23 +27,27 @@ export default function ProfileCard() {
             sx={{
               width: 62,
               height: 30,
-              backgroundColor: "#efaf6a",
+              backgroundColor: "#db2a13",
               borderRadius: 10,
               textAlign: "center",
             }}
           >
-            <Typography sx={{ fontSize: 12, mt: 0.7 }}>Spicy</Typography>
+            <Typography sx={{ fontSize: 12, mt: 0.7, color: "white" }}>
+              Spicy
+            </Typography>
           </Box>
           <Box
             sx={{
               width: 62,
               height: 30,
-              backgroundColor: "#efaf6a",
+              backgroundColor: "#d36617",
               borderRadius: 20,
               textAlign: "center",
             }}
           >
-            <Typography sx={{ fontSize: 12, mt: 0.7 }}>Savoury</Typography>
+            <Typography sx={{ fontSize: 12, mt: 0.7, color: "white" }}>
+              Savoury
+            </Typography>
           </Box>
         </Stack>
         <div

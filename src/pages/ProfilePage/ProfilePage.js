@@ -1,7 +1,6 @@
 import React from "react";
 import NavBar from "../../components/NavBar/NavBar";
 import Return from "../../components/General/Return";
-import SearchBar from "../../components/General/SearchBar";
 import ProfileCard from "../../components/Profile/ProfileCard";
 import Stack from "@mui/material/Stack";
 import Hours from "../../components/Profile/Hours";
@@ -19,30 +18,28 @@ export default function ProfilePage() {
   return (
     <>
       <NavBar noSearchBar={false} />
-      <Box mt={5}>
-        <Return />
-        <Stack
-          direction="column"
-          spacing={3}
-          alignItems="flex-start"
-          sx={{ ml: 4 }}
-        >
-          <ProfileCard />
-          <Hours />
-          <About />
-          <Menu />
-        </Stack>
-        <Stack
-          direction="column"
-          spacing={3}
-          alignItems="center"
-          sx={{ mt: 2, mb: "60px" }}
-        >
-          <Gallery />
-          <Review reviews={reviewInfo.vendor} />
-          <MoreSimilar />
-        </Stack>
-      </Box>
+      <Return />
+      <Stack
+        direction="column"
+        spacing={3}
+        alignItems="flex-start"
+        sx={{ ml: 4 }}
+      >
+        <ProfileCard />
+        <Hours />
+        <About />
+        <Menu />
+      </Stack>
+      <Stack
+        direction="column"
+        spacing={3}
+        alignItems="center"
+        sx={{ mt: 2, mb: "60px" }}
+      >
+        <Gallery />
+        <Review reviews={reviewInfo.vendor} />
+        <MoreSimilar />
+      </Stack>
       <Footer />
     </>
   );

@@ -6,22 +6,25 @@ export default function SearchBar(props) {
   return (
     <>
       {isWide ? (
-        <input
-          type="search"
-          style={{
-            display: "block",
-            height: "35px",
-            fontSize: "18px",
-            backgroundColor: "#fafafa",
-            border: "none",
-            width: "340px",
-            padding: "3px",
-            paddingLeft: "10px",
-            borderRadius: "10px",
-            margin: "16px auto 0 auto",
-          }}
-          placeholder="Search"
-        />
+        <Link to="/filter">
+          <input
+            autoFocus
+            type="search"
+            style={{
+              display: "block",
+              height: "35px",
+              fontSize: "18px",
+              backgroundColor: "#fafafa",
+              border: "none",
+              width: "340px",
+              padding: "3px",
+              paddingLeft: "10px",
+              borderRadius: "10px",
+              margin: "16px auto 0 auto",
+            }}
+            placeholder="Search"
+          />
+        </Link>
       ) : (
         <div
           style={{
@@ -32,20 +35,23 @@ export default function SearchBar(props) {
             marginTop: "16px",
           }}
         >
-          <input
-            type="search"
-            style={{
-              height: "35px",
-              fontSize: "18px",
-              backgroundColor: "#fafafa",
-              border: "none",
-              padding: "3px",
-              paddingLeft: "10px",
-              borderRadius: "10px",
-              width: "290px",
-            }}
-            placeholder="Search"
-          />
+          <Link to="/filter">
+            {" "}
+            <input
+              type="search"
+              style={{
+                height: "35px",
+                fontSize: "18px",
+                backgroundColor: "#fafafa",
+                border: "none",
+                padding: "3px",
+                paddingLeft: "10px",
+                borderRadius: "10px",
+                width: "290px",
+              }}
+              placeholder="Search"
+            />
+          </Link>
           <Link to="/map">
             <svg
               width="43"
