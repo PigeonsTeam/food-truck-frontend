@@ -36,7 +36,9 @@ Customer Profiles with a gallery and reviews and a collection of vendors by the 
 
 After conducting user research, the UX/UI designers created a low-fidelity to high-fidelity prototype that the developers could use as a reference and created the mobile web-app with React, JavaScript, MaterialUI and,Pigeon-Maps 
 
-The final design is a Single Page Application built with React.js and React-router. We also used Material-UI for more efficient development. The file structure is designed to make it clear different sections of project. The component contains all the components that takes in props and display data, the data are out model which contains all the data we researched, and the pages contains all the different pages of the website.
+The final design is a Single Page Application built with React.js and React-router. We also used Material-UI to help us in easily create and style components with having to spend much time on the CSS. It allowed us to easily set the layout of the project, and only use CSS to add personal styles. One of the core requirements of our project is to be able to see and choose vendors in your area from a map, to help us achieve that we used Pigeon Maps api to display the map and allow the user to interact with it.
+
+The file structure is designed to make it clear different sections of project. The component contains all the components that takes in props and display data, the data are out model which contains all the data we researched, and the pages contains all the different pages of the website. The developers also opened up new branches for different features and communicated effectively on time with each other to make sure we do not ran into any conflicts.
 
 For best user experience, the flow of the app was carefully designed to make flow the system clear and easy to understand. Best practices for styling and layout of the page are carried out according to visual design principles such as Balance, Emphasis and Unity.
 
