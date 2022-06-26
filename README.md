@@ -2,7 +2,8 @@
 
 - [Hackathon Site](https://www.freyhacks.tech/)
 - [Figma Prototype](https://www.figma.com/proto/QPVJhFRFOe6qEbGdn7UMuV/Peckish-Prototype?page-id=32%3A2722&node-id=42%3A3322&viewport=704%2C668%2C0.22&scaling=scale-down&starting-point-node-id=42%3A3322&show-proto-sidebar=1)
-- [Deployed Demo]() (View it in IPhone X size screen)
+- [Deployed Demo](http://www.peckish.tech/) (View it in IPhone X size scree, change screen size)
+- [Deployed Demo (alternative link)](https://peckish-harryqu1229.vercel.app/)
 ## Project Background ☀️
 
 Summertime is all about coming together with friends and family and enjoying everything the summer sun has to offer us. What better than delicious foods to bring together people of all different backgrounds and connect them to the cultures of the world. With the warmer weather and people itching to pack their picnic blankets or just hitting the streets for a relaxing stroll, food cart vendors are all just as excited to be providing quick bites and casual eats for customers to munch on while they enjoy the outside scenery. 
