@@ -14,7 +14,7 @@ import {
 } from "@mui/material";
 import { Map, Marker } from "pigeon-maps";
 import { stamenToner } from "pigeon-maps/providers";
-import { foodTrucks } from "../../data/foodTrucks";
+import { foodTrucks, Trucks } from "../../data/foodTrucks";
 import NavBar from "../../components/NavBar/NavBar";
 import { useNavigate } from "react-router-dom";
 
@@ -37,7 +37,6 @@ const SquareButton = ({ title, onClick }) => {
         borderRadius: "6px",
         backgroundColor: "#d9d8d8",
         fontWeight: "600",
-
         color: "black",
         fontSize: "16px",
         width: "98px",
@@ -51,19 +50,20 @@ const SquareButton = ({ title, onClick }) => {
 const MapPage = () => {
   const [open, setOpen] = useState(false);
   const [modalData, setModalData] = useState(null);
+  const navigate = useNavigate();
+
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
-  const navigate = useNavigate();
 
   const handleModal = (truck) => {
     setModalData(truck);
     handleOpen();
   };
 
-  const markers = foodTrucks.map((truck) => {
+  const markers = Trucks?.map((truck) => {
     return (
       <Marker
-        color="black"
+        color="#B21905"
         width={50}
         anchor={[truck.location[0], truck.location[1]]}
         onClick={() => handleModal(truck)}
@@ -71,8 +71,6 @@ const MapPage = () => {
       />
     );
   });
-
-  // create a small popup/modal for the basic food truck info
 
   return (
     <>
@@ -112,28 +110,27 @@ const MapPage = () => {
               >
                 <CardMedia
                   component="img"
-                  image="sushiPic.jpeg"
+                  image={modalData?.image}
                   sx={{ width: 70, height: 70 }}
                 />
                 <CardMedia
                   component="img"
-                  image="sushiPic.jpeg"
+                  image="table.jpeg"
                   sx={{ width: 70, height: 70 }}
                 />
                 <CardMedia
                   component="img"
-                  image="sushiPic.jpeg"
+                  image="cup.jpeg"
                   sx={{ width: 70, height: 70 }}
                 />
               </Stack>
               <Box ml={1} pt={3} px={1}>
                 <CardContent sx={{ padding: 0 }}>
                   <Typography mb={1} fontSize={18} sx={{ fontWeight: 700 }}>
-                    Lorem ipsum dolor sit
+                    {modalData?.name}
                   </Typography>
                   <Typography fontSize={16} variant="p">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Du
-                    is pellentesque venenatis aliqu am neque massa enim fusce.
+                    {modalData?.shortDescription}
                   </Typography>
                   <br />
                   <Box mt={2}>

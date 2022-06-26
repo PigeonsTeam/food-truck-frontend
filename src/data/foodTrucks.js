@@ -63,7 +63,7 @@ export const Trucks = [
     visited: true,
     image: "food/food8.avif",
     topPick: true,
-    location: [40.7438, -74.006],
+    location: [40.7438, -74.026],
   },
   {
     name: "Lucy's Tamales",
@@ -81,7 +81,7 @@ export const Trucks = [
     visited: true,
     image: "food/food12.jpeg",
     topPick: false,
-    location: [46.7128, -78.006],
+    location: [40.7128, -74.136],
   },
   {
     name: "Tia's Elotes",
@@ -99,7 +99,7 @@ export const Trucks = [
     visited: false,
     image: "food/food13.jpeg",
     topPick: false,
-    location: [48.7128, -79.006],
+    location: [40.7118, -74.039],
   },
   {
     name: "Los Dos Tacos & Waffles",
@@ -116,7 +116,7 @@ export const Trucks = [
     visited: true,
     image: "food/food14.jpeg",
     topPick: false,
-    location: [50.7128, -83.006],
+    location: [40.7228, -74.039],
   },
   {
     name: "Tako's Japanese Eats",
@@ -134,7 +134,7 @@ export const Trucks = [
     visited: false,
     image: "food/food15.jpeg",
     topPick: false,
-    location: [54.7128, -84.006],
+    location: [40.7148, -74.036],
   },
   {
     name: "Momo's Dumplings",
@@ -152,7 +152,7 @@ export const Trucks = [
     visited: false,
     image: "food/food15.jpeg",
     topPick: false,
-    location: [54.7128, -84.006],
+    location: [40.7128, -74.016],
   },
   {
     name: "Spaghetti House",
@@ -168,8 +168,9 @@ export const Trucks = [
       },
     ],
     visited: true,
+    image: 'food/pasta.jpeg',
     topPick: false,
-    location: [40.7128, -74.006],
+    location: [40.7128, -74.036],
   },
   {
     name: "Taco Truck Express",
@@ -185,6 +186,7 @@ export const Trucks = [
       },
     ],
     visited: true,
+    image: 'food4.jpg' ,
     topPick: false,
     location: [40.7338, -74.006],
   },
