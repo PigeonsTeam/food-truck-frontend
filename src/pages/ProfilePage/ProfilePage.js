@@ -11,8 +11,10 @@ import Review from "../../components/Profile/Review";
 import MoreSimilar from "../../components/Profile/MoreSimilar";
 import { reviewInfo } from "../../data/reviews";
 import Footer from "../../components/Footer/Footer";
+import { Box } from "@mui/material";
 
 export default function ProfilePage() {
+
   return (
     <>
       <NavBar noSearchBar={false} />
